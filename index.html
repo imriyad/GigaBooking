@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GigaBooking Left UI Only</title>
+  <title>GigaBooking</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      overflow: hidden;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-white min-h-screen p-2 pb-16">
+<body class="bg-white min-h-screen">
 
-  <div class="w-full max-w-[1920px] min-h-screen flex">
+  <div class="w-full max-w-[1920px] p-2 h-screen flex">
 
-    <!-- Left side container scaled down -->
-<div class="w-full lg:w-1/2 relative bg-[#09073A] h-[120vh] rounded-3xl flex flex-col justify-between p-4 text-white overflow-hidden"
-     style="transform: scale(0.989); transform-origin: top left;">
-
+    <!-- Left side container -->
+    <div class="w-full lg:w-1/2 relative bg-[#09073A] rounded-3xl flex flex-col justify-between p-4 text-white overflow-hidden">
 
       <!-- Abstract image -->
       <img
@@ -23,90 +34,140 @@
         style="
           left: -35%;
           width: 75%;
-          transform: translateY(-60%) rotate(-30deg);
+          transform: translateY(-50%) rotate(-30deg);
           transform-origin: center;
         "
       />
 
       <!-- Feature cards container -->
-      <div class="flex flex-col items-center gap-8 mt-16 p-3 ml-28">
+      <div class="flex flex-col items-center gap-8 mt-30 p-3 ml-40">
 
         <!-- Cross-Platform Block -->
-<div
-  class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left"
-  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
->
-  <div class="flex flex-col items-start">
-    <img src="public/assets/icons/CrossPlatform.png" class="w-10 h-10 mb-3" alt="Cross Platform Icon" />
-    <div>
-      <h3 class="text-[20px] leading-[28px] text-white">Cross-Platform</h3>
-      <p class="text-[14px] leading-[20px] text-gray-300">
-        Access your schedule anytime, anywhere on any device.
-      </p>
-    </div>
-  </div>
-</div>
-
+        <div
+          class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left"
+          style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
+        >
+          <div class="flex flex-col items-start">
+            <img src="public/assets/icons/CrossPlatform.png" class="w-10 h-10 mb-3" alt="Cross Platform Icon" />
+            <div>
+              <h3 class="text-[20px] leading-[28px] text-white">Cross-Platform</h3>
+              <p class="text-[14px] leading-[20px] text-gray-300">
+                Access your schedule anytime, anywhere on any device.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- Easy Scheduling Block -->
         <div
-  class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left ml-28"
-  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
->
-  <div class="flex flex-col items-start">
-    <img src="public/assets/icons/EasilyShedule.png" class="w-10 h-10 mb-3" alt="Easy Scheduling Icon" />
-
-    <div>
-      <h3 class="text-[20px] leading-[28px] text-white">Easy Scheduling</h3>
-      <p class="text-[14px] leading-[20px] text-gray-300">
-        Plan your tasks in seconds with our user-friendly interface.
-      </p>
-    </div>
-  </div>
-</div>
+          class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left ml-28"
+          style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
+        >
+          <div class="flex flex-col items-start">
+            <img src="public/assets/icons/EasilyShedule.png" class="w-10 h-10 mb-3" alt="Easy Scheduling Icon" />
+            <div>
+              <h3 class="text-[20px] leading-[28px] text-white">Easy Scheduling</h3>
+              <p class="text-[14px] leading-[20px] text-gray-300">
+                Plan your tasks in seconds with our user-friendly interface.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- Automated Reminders Block -->
         <div
-  class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left"
-  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
->
-  <div class="flex flex-col items-start">
-    <img src="public/assets/icons/AutomatedReminders.png" class="w-10 h-10 mb-3" alt="Automated Reminders Icon" />
+          class="p-3 rounded-xl shadow backdrop-blur-md max-w-[230px] max-h-[150px] min-h-[130px] w-full text-left"
+          style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);"
+        >
+          <div class="flex flex-col items-start">
+            <img src="public/assets/icons/AutomatedReminders.png" class="w-10 h-10 mb-3" alt="Automated Reminders Icon" />
+            <div>
+              <h3 class="text-[20px] leading-[28px] text-white">Automated Reminders</h3>
+              <p class="text-[14px] leading-[20px] text-gray-300">
+                Never miss an appointment with customizable notifications.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div>
-      <h3 class="text-[20px] leading-[28px] text-white">Automated Reminders</h3>
-      <p class="text-[14px] leading-[20px] text-gray-300">
-        Never miss an appointment with customizable notifications.
-      </p>
-    </div>
-  </div>
-</div>
-
-      <!-- Bottom Heading -->
-  <div 
-        class="relative z-10 text-white text-center mx-auto pt-24  mb-10 left-[-50px]"
-        style="
-          font-family: 'Plus Jakarta Sans', sans-serif;
-          font-weight: 400;
-          font-size: 28px;
-          line-height: 36px;
-          letter-spacing: 0;
-          width: 380px;
-          height: 72px;
-        "
-      >
-        Organize your life with <br />our intuitive scheduling app.
+        <!-- Bottom Heading -->
+        <div 
+          class="relative z-10 text-white text-center mx-auto mt-4 mb-4 left-[-80px]"
+          style="
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0;
+            width: 380px;
+            height: 72px;
+          "
+        >
+          Organize your life with <br />our intuitive scheduling app.
+        </div>
       </div>
-
     </div>
-
 
     <!-- Right side container -->
- <div class="lg:block lg:w-1/2 bg-white">
-  <!-- Right side content goes here -->
+    <div class="lg:w-1/2 flex items-center justify-center bg-white">
+      <div class="w-full max-w-sm text-center">
+
+        <!-- Logo -->
+<div class="flex justify-center mb-6">
+    <img src="public/assets/icons/GBLogo.svg" alt="GB Logo" class="w-16 h-16 object-contain" />
 </div>
 
 
+        <!-- Heading -->
+        <h1 class="text-2xl md:text-3xl font-bold text-[#0D0B2D] mb-2">Welcome Back.</h1>
+        <p class="text-gray-500 text-sm  mb-6">Let’s log in to GigaBooking and get started.</p>
+
+        <!-- Email input -->
+        <div class="mb-4">
+          <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
+            <img src="https://img.icons8.com/ios-filled/24/999999/new-post.png" class="w-4 h-4 mr-2" alt="Email Icon" />
+            <input 
+              type="email" 
+              placeholder="Your Email" 
+              class="w-full focus:outline-none text-sm text-gray-700 bg-transparent"
+            />
+          </div>
+        </div>
+
+        <!-- Password input -->
+        <div class="mb-4">
+          <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
+            <img src="https://img.icons8.com/ios-filled/24/999999/lock-2.png" class="w-4 h-4 mr-2" alt="Password Icon" />
+            <input 
+              type="password" 
+              placeholder="Your Password" 
+              class="w-full focus:outline-none text-sm text-gray-700 bg-transparent"
+            />
+          </div>
+        </div>
+
+        <!-- Remember me and Forgot Password -->
+        <div class="flex justify-between items-center text-sm text-gray-600 mb-6">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2 accent-[#6F4CFF]" />
+            Remember me
+          </label>
+          <a href="#" class="text-[#6F4CFF] hover:underline">Forgot Password?</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="w-full bg-[#4F46E5] hover:bg-[#5a3be0] text-white font-semibold py-2 rounded-md shadow-md transition">
+          Log in
+        </button>
+      
+
+
+        <!-- Signup Link -->
+        <p class="text-sm text-gray-600 mt-6">
+          Are you a Newbie? <a href="#" class="text-[#6F4CFF] font-medium hover:underline">Sign up</a>
+        </p>
+
+      </div>
+    </div>
 
   </div>
 
